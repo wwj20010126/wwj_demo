@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        #body {
+            width: 100vw;
+            height: 100vh;
+            background: white;
+        }
+
+        #ul {
+            width: 500px;
+            color: rgb(116, 49, 49);
+            margin: auto;
+            display: flex;
+            justify-content: start;
+        }
+
+        #red {
+            width: 5px;
+            height: 5px;
+            border: 5px solid red;
+        }
+
+        #skyblue {
+            width: 5px;
+            height: 5px;
+            border: 5px solid skyblue;
+        }
+
+        #black {
+            width: 5px;
+            height: 5px;
+            border: 5px solid black;
+        }
+
+        #td {
+            width: 500px;
+            margin: auto;
+            border: 1px solid #666;
+            margin-top: 10px;
+        }
+
+        #td tr li {
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<script>
+
+
+    window.onload = function () {
+        var red = document.getElementById('red')
+        var skyblue = document.getElementById('skyblue')
+        var black = document.getElementById('black')
+        var body = document.getElementById('body')
+
+        red.onclick = function () {
+            body.style.background = 'red'
+        }
+
+        skyblue.onclick = function () {
+            body.style.background = 'skyblue'
+        }
+
+        black.onclick = function () {
+            body.style.background = 'black'
+        }
+    }
+
+
+
+
+</script>
+
+<body id="body">
+    <ul id="ul">
+        <li id="red"></li>
+        <li id="skyblue"></li>
+        <li id="black"></li>
+    </ul>
+
+    <table id="td">
+        <tr>
+            <td> <a href="#">新闻</a></td>
+            <td> <a href="#">音乐</a></td>
+            <td> <a href="#">视频</a></td>
+            <td> <a href="#">电影</a></td>
+            <td> <a href="#">星座</a></td>
+            <td> <a href="#">情感</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>

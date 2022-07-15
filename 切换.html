@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.color{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    
+}
+    </style>
+</head>
+<body>
+    <button id="itemId" >点击变宽</button>
+    <button id="itembig" >点击变高</button>
+    <button id="itembug">变色</button>
+    <button id="itemc">重置</button>
+    <button id="itembokeb">隐藏</button>
+    <button id="itennone">显示</button>
+    <div class="color" id="color"></div>
+    
+    <script>
+       var itemId = document.getElementById('itemId')
+       var itembig = document.getElementById('itembig')
+       var c_b = document.getElementById('color')
+       var itembug = document.getElementById('itembug')
+       var itemc = document.getElementById('itemc')
+       var itembokeb = document.getElementById('itembokeb')
+       var itennone  = document.getElementById('itennone')
+    //    console.log(color);
+        // 点击变小
+       itemId.onclick = function(){
+        c_b.style.width="600px";
+        },
+        // 点击变大
+        itembig.onclick = function(){
+        c_b.style.height="800px";
+        }
+        // 点击变色
+        itembug.onclick = function(){
+        c_b.style.backgroundColor='black'
+        }
+        // 点击重置
+        itemc.onclick= function(){
+            c_b.style.backgroundColor='red'
+            c_b.style.width="400px";
+            c_b.style.height="400px";
+        }
+        // 点击隐藏
+        itembokeb.onclick= function(){
+            c_b.style.display='none'
+        }
+        // 点击显示
+        itennone.onclick= function(){
+            c_b.style.display='block'
+            
+        }
+      
+
+    </script>
+</body>
+</html>
